@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap");
+$Secondery-text-color: #f3f3f3;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  input[type="number"] {
+    -moz-appearance: textfield;
+    scroll-behavior: smooth;
+  }
+}
+.App {
+  height: 100vh;
+  display: grid;
+  font-family: "Poppins", sans-serif;
+}
+.Log {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 0.9fr 1fr;
+}
+.Bg_container {
+  background: #ffffff;
+  .Bg {
+    height: 100%;
+    background: url("./Asset/pexels-jakub-novacek-924824-01\ \(1\).jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 0 30px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .main_head {
+      color: $Secondery-text-color;
+      font-size: 1.8em;
+      font-weight: 500;
+      padding-bottom: 0.9em;
+    }
+    .Bg_text {
+      width: 60%;
+      text-align: center;
+      color: $Secondery-text-color;
+      font-weight: 400;
+      font-size: 0.9em;
+    }
+  }
+}
+
+.Auth {
+  display: grid;
+  grid-template-rows: 0.5fr auto 0.1fr;
+}
+.AuthHeader_1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .logo_header {
+    width: 162px;
+    height: 112px;
+  }
+  .join_text {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #393e46;
+  }
+}
+.AuthSection,
+.AuthForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .Input {
+    margin-bottom: 2em;
+    padding: 1.2em 4em;
+    border-radius: 0.6em;
+    border: 0.2px solid #ffffff;
+    box-shadow: 0px 2px 10px rgba($color: #a0a0a0, $alpha: 0.5);
+    font-family: "Poppins", sans-serif;
+    font-size: smaller;
+    color: #393e46;
+  }
+  .Submit {
+    padding: 1.2em 3em;
+    border-radius: 0.6em;
+    outline: none;
+    border: none;
+    background: #393e46;
+    color: $Secondery-text-color;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .errorMessage {
+    margin-bottom: 2em;
+    padding: 1.2em 4em;
+    border-radius: 0.6em;
+    border: 0.2px solid #ffffff;
+    box-shadow: 0px 2px 10px rgba($color: #a0a0a0, $alpha: 0.5);
+    font-family: "Poppins", sans-serif;
+    font-size: smaller;
+    border: 1px solid rgb(255, 92, 92);
+  }
+  .errorMessage::placeholder {
+    color: rgb(255, 92, 92);
+  }
+}
+.Footer_text {
+  text-align: center;
+  color: #393e46;
+  font-size: 0.9em;
+}
+.Landing {
+  height: 100vh;
+  width: 100vw;
+  background: url("./Asset/pexels-jakub-novacek-924824-01\ \(1\).jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 0.1fr 1fr;
+}
+.LandingHeader {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #ffffff;
+  .Landing_Header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .Landing_Header_Head {
+      font-size: larger;
+      font-weight: 500;
+    }
+  }
+  .LandingNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .Landing_Ul {
+      display: flex;
+      list-style: none;
+      .Landing_link {
+        margin-left: 1.5em;
+      }
+      // .links {
+      //   color: #ffffff;
+      //   text-decoration: none;
+      // }
+    }
+  }
+}
+.LandingContent {
+  justify-items: center;
+  display: grid;
+  grid-template-rows: 0.5fr 1fr;
+  color: #ffffff;
+  .Landing_FbDisc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .Landing_FbHead {
+    font-weight: 500;
+  }
+  .Landing_Fbtext {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0.9em;
+  }
+  .LC_Card {
+    height: 20em;
+    width: 18em;
+    background: #ffffff;
+    color: #393e46;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0.6em;
+    align-items: center;
+    flex-direction: column;
+    .TcF {
+      font-weight: 500;
+    }
+    .TcP {
+      font-size: 0.9em;
+      text-align: center;
+      width: 70%;
+    }
+    .TcB {
+      padding: 0.9em 3em;
+      border-radius: 0.6em;
+      outline: none;
+      border: none;
+      background: #393e46;
+      color: $Secondery-text-color;
+      font-family: "Poppins", sans-serif;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+}
+
+
+@media only screen and(min-width: 1020px) {
+  .Log {
+    grid-template-rows: none;
+    grid-template-columns: 0.7fr auto;
+  }
+  .Bg_container {
+    .Bg {
+      position: relative;
+      top: 5%;
+      bottom: 5%;
+      transform: translate(-50% -50%);
+      height: 90%;
+      border-radius: 0 30px 30px 0;
+      .main_head {
+        font-size: 2.5em;
+      }
+      .Bg_text {
+        font-size: 1em;
+      }
+    }
+  }
+  .Auth {
+    grid-template-rows: 1fr 1fr 0.1fr;
+  }
+  .AuthHeader_1 {
+    padding-bottom: 4em;
+    justify-content: flex-end;
+    .logo_header {
+      width: 310px;
+      height: 208px;
+    }
+  }
+  .AuthSection {
+    justify-content: flex-start;
+  }
+  .LandingHeader {
+    .Landing_Header {
+      .Landing_Header_Head {
+        font-size: xx-large;
+        font-weight: 500;
+      }
+    }
+    .LandingNav {
+      .Landing_Ul {
+        .Landing_link {
+          font-size: x-large;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .LandingContent {
+    .Landing_FbDisc {
+      .Landing_FbHead {
+        font-size: 2.5em;
+     
+      }
+      .Landing_Fbtext {
+        font-size: 1rem;
+        width: 50%;
+      }
+    }
+    .LC_Card {
+      height: 20em;
+      width: 40em;
+      .TcF {
+         font-size: 1.9rem; 
+        }
+        .TcP {
+          font-size: 1rem;
+      }
+      .TcB {
+        font-size: 1em;
+      }
+    }
+  }
+  }
+
+
+@media only screen and(min-width: 1800px) {
+  .Bg_container {
+    .Bg {
+      .main_head {
+        font-size: 3.5em;
+      }
+      .Bg_text {
+        font-size: 1.5em;
+      }
+    }
+  }
+  .LandingHeader{
+    .LandingNav {
+      .Landing_Ul {
+        .Landing_link {
+          margin-left: 5em;
+        }
+      }
+    }
+  }
+ 
+  .LandingContent{
+    .Landing_FbDisc{
+      .Landing_Fbtext{
+        font-size: 1.2rem;
+      }
+    }
+    .LC_Card{
+      .TcF{
+  font-size: 1.5rem;
+      }
+        .TcP{
+          font-size: 1.2rem;
+        }
+      
+    }
+  }
+
+}
